@@ -26,6 +26,8 @@ public struct SegementSlideDefaultSwitcherConfig {
     public var badgeHeightForCountType: CGFloat
     public var badgeHeightForCustomType: CGFloat
     public var badgeFontForCountType: UIFont
+    public var centerInView: Bool
+    public var indicatorMarginBottom: CGFloat
     
     public init(type: SwitcherType = .segement,
                 horizontalMargin: CGFloat = 16,
@@ -55,6 +57,8 @@ public struct SegementSlideDefaultSwitcherConfig {
         self.badgeHeightForCountType = badgeHeightForCountType
         self.badgeHeightForCustomType = badgeHeightForCustomType
         self.badgeFontForCountType = badgeFontForCountType
+        self.indicatorMarginBottom = 0
+        self.centerInView = false
     }
     
 }
