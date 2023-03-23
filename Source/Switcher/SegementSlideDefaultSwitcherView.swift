@@ -23,7 +23,6 @@ public protocol SegementSlideDefaultSwitcherViewDelegate: class {
 public class SegementSlideDefaultSwitcherView: UIView {
     
     public private(set) var scrollView = UIScrollView()
-    private let indicatorView = UIView()
     private var titleButtons: [UIButton] = []
     private var innerConfig: SegementSlideDefaultSwitcherConfig = SegementSlideDefaultSwitcherConfig.shared
     
@@ -35,6 +34,7 @@ public class SegementSlideDefaultSwitcherView: UIView {
     
     /// you must call `reloadData()` to make it work, after the assignment.
     public var config: SegementSlideDefaultSwitcherConfig = SegementSlideDefaultSwitcherConfig.shared
+    public var indicatorView = UIView()
     
     public override var intrinsicContentSize: CGSize {
         return scrollView.contentSize
